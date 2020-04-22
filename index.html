@@ -1,7 +1,7 @@
 <!--
  * -> Author : Akko
  * -> Date : 2020-04-20 16:34:36
- * -> LastEditTime : 2020-04-22 20:39:54
+ * -> LastEditTime : 2020-04-22 22:09:04
  * -> LastEditors : Akko
  * -> Description : My Web Resume 2.0 ( 1.0 写乱了，已废弃，源码仍然保留在github )
  * -> FilePath : \My-Resume\index.html
@@ -26,535 +26,611 @@
     * -> *使用相关库（如 jQuery） （）
 -->
 <html lang="zh" class="no-js">
-  <head>
-    <!--页面设定 Start-->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Resume</title>
-    <meta name="description" content="Akko's Resume" />
-    <meta name="keywords" content="Akko,Resume" />
-    <meta name="author" content="Akko" />
-    <!--页面设定 End-->
-    <!--连接 Start-->
-    <link rel="shortcut icon" href="./img/简介.ico">
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
-    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="./lib/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="./lib/css/animate.css" type="text/css">
-    <link rel="stylesheet" href="./lib/css/transition-animations.css" type="text/css">
-    <link rel="stylesheet" href="./lib/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="./lib/css/magnific-popup.css" type="text/css">
-    <script src="./lib/js/jquery-2.1.3.min.js"></script>
-    <script src="./lib/js/modernizr.custom.js"></script>
-    <!--连接 End-->
-  </head>
-  <body class="material-template">
-    <div class="preloader"><!--加载动画 Start-->
-      <div class="preloader-animation">
-        <div class="preloader-spinner"></div>
-      </div>
-    </div><!--加载动画 End-->
 
-    <div id="page" class="page"><!--页面主体 Start-->
-      <header id="site_header" class="header mobile-menu-hide"><!--页面头部 Start-->
-        <div class="header-content"><!--头部内容 Start-->
-          <div class="site-title-block mobile-hidden">
-            <div class="site-title">Akko <span>颜廷伟</span></div>
-          </div>
-          <div class="site-nav"><!--导航 Start-->
-            <ul id="nav" class="site-main-menu"><!--主菜单 Start-->
-              <li>
-                <a class="pt-trigger" href="#home" data-animation="62">主页</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#resume" data-animation="62">简历</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#services" data-animation="62">服务</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#portfolio" data-animation="62">作品</a>
-              </li>
-            </ul><!--主菜单 End-->
-          </div><!--导航 End-->
-        </div><!--头部内容 End-->
-      </header><!--页面头部 End-->
-      <div class="mobile-header mobile-visible"><!--手机版头部 Start-->
-        <div class="mobile-logo-container">
-          <div class="mobile-site-title">Akko 颜廷伟</div>
+<head>
+  <!--页面设定 Start-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Resume</title>
+  <meta name="description" content="Akko's Resume" />
+  <meta name="keywords" content="Akko,Resume" />
+  <meta name="author" content="Akko" />
+  <!--页面设定 End-->
+  <!--连接 Start-->
+  <link rel="shortcut icon" href="./img/简介.ico">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./lib/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="./lib/css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./lib/css/animate.css" type="text/css">
+  <link rel="stylesheet" href="./lib/css/transition-animations.css" type="text/css">
+  <link rel="stylesheet" href="./lib/css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="./lib/css/magnific-popup.css" type="text/css">
+  <script src="./lib/js/jquery-2.1.3.min.js"></script>
+  <script src="./lib/js/modernizr.custom.js"></script>
+  <!--连接 End-->
+</head>
+
+<body class="material-template">
+  <div class="preloader">
+    <!--加载动画 Start-->
+    <div class="preloader-animation">
+      <div class="preloader-spinner"></div>
+    </div>
+  </div>
+  <!--加载动画 End-->
+
+  <div id="page" class="page">
+    <!--页面主体 Start-->
+    <header id="site_header" class="header mobile-menu-hide">
+      <!--页面头部 Start-->
+      <div class="header-content">
+        <!--头部内容 Start-->
+        <div class="site-title-block mobile-hidden">
+          <div class="site-title">Akko <span>颜廷伟</span></div>
         </div>
-        <a class="menu-toggle mobile-visible">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div><!--手机版头部 End-->
-      <div id="main" class="site-main"><!--主体部分 Start-->
-        <div class="pt-wrapper"><!--页面设置 Start-->
-          <div class="subpages"><!--子页面 Start-->
-            <section class="pt-page" data-id="home"><!--主页 Start-->
-              <div class="section-inner start-page-content">
-                <div class="page-header"><!--页面头部 Start-->
-                  <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                      <div class="photo">
-                        <img src="./img/photo.jpg" alt="颜廷伟 AKko">
-                      </div>
-                    </div>
-                    <div class="col-sm-8 col-md-8 col-lg-8">
-                      <div class="title-block">
-                        <h1>颜廷伟</h1>
-                        <div class="owl-carousel text-rotation">
-                          <div class="item">
-                            <div class="sp-subtitle">Web前端工程师</div>
-                          </div>
-                          <div class="item">
-                            <div class="sp-subtitle">软件开发</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="social-links"><!--TODO: 悬停QQ，微信二维码，github转链接-->
-                        <a href="#"><i class="fa fa-qq"></i></a>
-                        <a href="#"><i class="fa fa-wechat"></i></a>
-                        <a href="#"><i class="fa fa-github"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div><!--页面头部 End-->
-                <div class="page-content"><!--页面内容 Start-->
-                  <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6"><!--关于我 +下载简历 Start-->
-                      <div class="about-me">
-                        <div class="block-title">
-                          <h3>关于我</h3>
-                        </div>
-                        <p>
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp您好！我叫颜廷伟，信息与计算科学专业，目前本科生在读。<br>
-                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp擅长使用C，C++，Java等语言，对语言有一定的理解。
-                        </p>
-                      </div>
-                      <div class="download-resume">
-                        <a href="" class="btn btn-secondary">下载简历</a>
-                      </div>
-                    </div><!--关于我 +下载简历 End-->
-                    <div class="col-sm-6 col-md-6 col-lg-6"><!--个人信息 Start-->
-                      <table>
-                        <tr>
-                          <td class="table-title" width="100">年龄</td>
-                          <td width="100"></td>
-                          <td class="table-value" width="50">21</td>
-                        </tr>
-                        <tr>
-                          <td class="table-title" width="100">学校</td>
-                          <td width="100"></td>
-                          <td class="table-value" width="50">中南林业科技大学</td>
-                        </tr>
-                        <tr>
-                          <td class="table-title" width="100">手机</td>
-                          <td width="100"></td>
-                          <td class="table-value" width="50">178 7230 1484</td>
-                        </tr>
-                        <tr>
-                          <td class="table-title" width="100">邮箱</td>
-                          <td width="100"></td>
-                          <td class="table-value" width="50"><a href="mailto:2322264747@qq.com">2322264747@qq.com</a></td>
-                        </tr>
-                        <tr>
-                          <td class="table-title" width="100">状态</td>
-                          <td width="100"></td>
-                          <td class="table-value" width="50">本科在读</td>
-                        </tr>
-                      </table><!--个人信息 End-->
+        <div class="site-nav">
+          <!--导航 Start-->
+          <ul id="nav" class="site-main-menu">
+            <!--主菜单 Start-->
+            <li>
+              <a class="pt-trigger" href="#home" data-animation="62">主页</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#resume" data-animation="62">简历</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#services" data-animation="62">服务</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#portfolio" data-animation="62">作品</a>
+            </li>
+          </ul>
+          <!--主菜单 End-->
+        </div>
+        <!--导航 End-->
+      </div>
+      <!--头部内容 End-->
+    </header>
+    <!--页面头部 End-->
+    <div class="mobile-header mobile-visible">
+      <!--手机版头部 Start-->
+      <div class="mobile-logo-container">
+        <div class="mobile-site-title">Akko 颜廷伟</div>
+      </div>
+      <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!--手机版头部 End-->
+    <div id="main" class="site-main">
+      <!--主体部分 Start-->
+      <div class="pt-wrapper">
+        <!--页面设置 Start-->
+        <div class="subpages">
+          <!--子页面 Start-->
+          <section class="pt-page" data-id="home">
+            <!--主页 Start-->
+            <div class="section-inner start-page-content">
+              <div class="page-header">
+                <!--页面头部 Start-->
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="photo">
+                      <img src="./img/photo.jpg" alt="颜廷伟 AKko">
                     </div>
                   </div>
-                </div><!--页面内容 End-->
-              </div>
-            </section><!--主页 End-->
-            <section class="pt-page" data-id="resume"><!--简历 Start-->
-              <div class="section-inner custom-page-content">
-                <div class="page-header color-1">
-                  <h2>简历</h2>
-                </div>
-                <div class="page-content">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="block">
-                        <div class="block-title">
-                          <h3><span>教育</span>经历</h3>
+                  <div class="col-sm-8 col-md-8 col-lg-8">
+                    <div class="title-block">
+                      <h1>颜廷伟</h1>
+                      <div class="owl-carousel text-rotation">
+                        <div class="item">
+                          <div class="sp-subtitle">Web前端工程师</div>
                         </div>
-                        <div class="timeline"><!--教育经历时间线 Start-->
-                          <!-- 教育经历 1 -->
-                          <div class="timeline-item">
-                            <h4 class="item-title">小学</h4>
-                            <span class="item-period">2006 - 2010</span>
-                            <span class="item-small">盐城市秦庄小学</span>
-                            <p class="item-description">平平淡淡的优秀。</p>
-                          </div>
-                          <!-- / 教育经历 1 -->
-                          <!-- 教育经历 2 -->
-                          <div class="timeline-item">
-                            <h4 class="item-title">小学</h4>
-                            <span class="item-period">2010 - 2011</span>
-                            <span class="item-small">无锡市亭子桥中心小学</span>
-                            <p class="item-description">六年级转过来，特别认真，特别努力。</p>
-                          </div>
-                          <!-- / 教育经历 2 -->
-                          <!-- 教育经历 3 -->
-                          <div class="timeline-item">
-                            <h4 class="item-title">初中</h4>
-                            <span class="item-period">2011- 2014</span>
-                            <span class="item-small">无锡市广勤中学</span>
-                            <p class="item-description">自己都忘记初中在干嘛了，肯定很懂事。</p>
-                          </div>
-                          <!-- / 教育经历 3 -->
-                          <!-- 教育经历 4 -->
-                          <div class="timeline-item">
-                            <h4 class="item-title">高中</h4>
-                            <span class="item-period">2015 - 2018</span>
-                            <span class="item-small">无锡市第三高级中学</span>
-                            <p class="item-description">偶尔老实的高中生。</p>
-                          </div>
-                          <!-- / 教育经历 4 -->
-                          <!-- 教育经历 5 -->
-                          <div class="timeline-item">
-                            <h4 class="item-title">大学</h4>
-                            <span class="item-period">2018 - 现在</span>
-                            <span class="item-small">中南林业科技大学</span>
-                            <p class="item-description">⭐当代大学生⭐</p>
-                          </div>
-                          <!-- / 教育经历 5 -->
-                        </div><!--教育经历时间线 End-->
+                        <div class="item">
+                          <div class="sp-subtitle">软件开发</div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="block">
-                        <div class="block-title">
-                          <h3><span>个人</span>经历</h3>
-                        </div>
-                        <div class="timeline"><!--个人经历时间线 Start-->
-                          <!-- 个人经历-职位 1 Start-->
-                          <div class="timeline-item">
-                            <h4 class="item-title">职位</h4>
-                            <span class="item-period">2016 - 2018</span>
-                            <span class="item-small">副班长</span>
-                            <p class="item-description">高一到高三担任副班长</p>
-                          </div>
-                          <!-- 个人经历-职位 1 End-->
-                          <!-- 个人经历-奖项 1 Start-->
-                          <div class="timeline-item">
-                            <h4 class="item-title">国家级奖项</h4>
-                            <span class="item-period">2016</span>
-                            <span class="item-small">三等奖</span>
-                            <p class="item-description">第十四届全国中小学信息技术创新与实践活动“物联网创新设计”团体赛国家级三等奖</p>
-                          </div>
-                          <!--个人经历-奖项 1 End-->
-                          <!-- 个人经历-奖项 2 Start-->
-                          <div class="timeline-item">
-                            <h4 class="item-title">省级奖项</h4>
-                            <span class="item-period">2016</span>
-                            <span class="item-small">一等奖</span>
-                            <p class="item-description">第十四届全国中小学信息技术创新与实践活动“物联网创新设计”资格赛（江苏）团体赛省级一等奖</p>
-                          </div>
-                          <!--  个人经历-奖项 2 End -->
-                          <!-- 个人经历-奖项 3 Start-->
-                          <div class="timeline-item">
-                            <h4 class="item-title">省级奖项</h4>
-                            <span class="item-period">2017</span>
-                            <span class="item-small">二等奖</span>
-                            <p class="item-description">2017 NOC物联网创新设计竞赛省级二等奖</p>
-                          </div>
-                          <!-- 个人经历-奖项 3 End -->
-                        </div><!--个人经历时间线 End-->
-                      </div>
+                    <div class="social-links">
+                      <!--TODO: 悬停QQ，微信二维码，github转链接-->
+                      <a href="javascript:void(0)"onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                        <i class="fa fa-qq"></i>
+                      </a>
+                      <a href="javascript:void(0)"onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                        <i class="fa fa-wechat"></i>
+                      </a>
+                      <a href="javascript:void(0)"onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                        <i class="fa fa-github"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="block">
-                        <div class="block-title">
-                          <h3><span>设计</span>技能</h3>
-                        </div>
-                        <div class="skills-info">
-                          <h4>页面设计</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
-                          </div>
-                          <h4>视频制作</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-2"></div>
-                          </div>
-                          <h4>软件设计</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-3"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="block">
-                        <div class="block-title">
-                          <h3><span>编程</span>语言</h3>
-                        </div>
-                        <div class="skills-info">
-                          <h4>HTML5</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-4"></div>
-                          </div>
-                          <h4>Java</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-5"></div>
-                          </div>
-                          <h4>C/C++</h4>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-6"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row"><!--了解更多 Start-->
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                      <div class="block">
-                        <div class="center download-resume">
-                          <a href="#" class="btn btn-secondary">了解更多</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!--了解更多 End-->
                 </div>
               </div>
-            </section><!--简历 End-->
-
-            <section class="pt-page" data-id="services"><!--服务 Start-->
-              <div class="section-inner custom-page-content">
-                <div class="page-header color-1">
-                  <h2>服务</h2>
-                </div>
-                <div class="page-content">
-                  <!-- My Services -->
-                  <div class="row">
-                    <div class="col-sm-12 col-md-12">
+              <!--页面头部 End-->
+              <div class="page-content">
+                <!--页面内容 Start-->
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <!--关于我 +下载简历 Start-->
+                    <div class="about-me">
                       <div class="block-title">
-                        <h3><span>服务</span>项目</h3>
+                        <h3>关于我</h3>
                       </div>
+                      <p>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp您好！我叫颜廷伟，信息与计算科学专业，目前本科生在读。<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp擅长使用C，C++，Java等语言，对语言有一定的理解。
+                      </p>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                      <div class="service-block">
-                        <div class="service-info">
-                          <div class="service-image">
-                            <img src="./images/service/web_design_icon.png" alt="页面设计" class="mCS_img_loaded">
-                          </div>
-                          <h4>页面设计</h4>
-                          <p> 🔹功能型网页设计<br>🔹形象型网页设计<br>🔹信息型网页设计</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                      <div class="service-block">
-                        <div class="service-info">
-                          <div class="service-image">
-                            <img src="./images/service/photography_icon.png" alt="摄影" class="mCS_img_loaded">
-                          </div>
-                          <h4>摄影</h4>
-                          <p>📷构图干净<br>📷角度到位<br>📷用光巧妙</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                      <div class="service-block">
-                        <div class="service-info">
-                          <div class="service-image">
-                            <img src="./images/service/creativity_icon.png" alt="Creativity" class="mCS_img_loaded">
-                          </div>
-                          <h4>项目开发</h4>
-                          <p>C/C++开发<br>Android软件开发<br>微信小程序开发</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                      <div class="service-block">
-                        <div class="service-info">
-                          <div class="service-image">
-                            <img src="./images/service/advetising_icon.png" alt="Advetising" class="mCS_img_loaded">
-                          </div>
-                          <h4>广告</h4>
-                          <p>B站年更UP主<br>知乎老透明</p>
-                        </div>
-                      </div>
+                    <div class="download-resume">
+                      <a href="" class="btn btn-secondary">下载简历</a>
                     </div>
                   </div>
-                  <!-- End of My Services -->
-                  <!-- Pricing -->
-                  <div class="row">
-                    <div class="col-sm-12 col-md-12">
+                  <!--关于我 +下载简历 End-->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <!--个人信息 Start-->
+                    <table>
+                      <tr>
+                        <td class="table-title" width="100">年龄</td>
+                        <td width="100"></td>
+                        <td class="table-value" width="50">21</td>
+                      </tr>
+                      <tr>
+                        <td class="table-title" width="100">学校</td>
+                        <td width="100"></td>
+                        <td class="table-value" width="50">中南林业科技大学</td>
+                      </tr>
+                      <tr>
+                        <td class="table-title" width="100">手机</td>
+                        <td width="100"></td>
+                        <td class="table-value" width="50">178 7230 1484</td>
+                      </tr>
+                      <tr>
+                        <td class="table-title" width="100">邮箱</td>
+                        <td width="100"></td>
+                        <td class="table-value" width="50"><a href="mailto:2322264747@qq.com">2322264747@qq.com</a></td>
+                      </tr>
+                      <tr>
+                        <td class="table-title" width="100">状态</td>
+                        <td width="100"></td>
+                        <td class="table-value" width="50">本科在读</td>
+                      </tr>
+                    </table>
+                    <!--个人信息 End-->
+                  </div>
+                </div>
+              </div>
+              <!--页面内容 End-->
+            </div>
+          </section>
+          <!--主页 End-->
+          <section class="pt-page" data-id="resume">
+            <!--简历 Start-->
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>简历</h2>
+              </div>
+              <div class="page-content">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
                       <div class="block-title">
-                        <h3>工作<span>意向</span></h3>
+                        <h3><span>教育</span>经历</h3>
                       </div>
-                      <!--此处参考了office365购买界面-->
-                      <div class="lm-pricing row clearfix">
-                        <div class="lm-package-wrap col-md-4 default-col">
-                          <div class="lm-package">
-                            <div class="lm-heading-row">
-                              <span>视频制作</span>
-                            </div>
-                            <div class="lm-pricing-row">
-                              <span>¥50</span>
-                              <small>/每个</small>
-                            </div>
-                            <div class="lm-button-row">
-                              <a href="#" target="_self" class="btn btn-primary">点击联系</a>
-                            </div>
-                            <div class="lm-default-row">
-                              视频压制 剪辑后期
-                            </div>
-                            <div class="lm-default-row">
-                              字幕制作与翻译
-                            </div>
-                            <div class="lm-default-row">
-                              时间轴调整 特效字幕
-                            </div>
-                            <div class="lm-default-row">
-                            </div>
+                      <!--教育经历时间线 Start-->
+                      <div class="timeline">
+
+                        <!-- 教育经历 1 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">小学</h4>
+                          <span class="item-period">2006 - 2010</span>
+                          <span class="item-small">盐城市秦庄小学</span>
+                          <p class="item-description">平平淡淡的优秀。</p>
+                        </div>
+                        <!-- / 教育经历 1 -->
+                        <!-- 教育经历 2 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">小学</h4>
+                          <span class="item-period">2010 - 2011</span>
+                          <span class="item-small">无锡市亭子桥中心小学</span>
+                          <p class="item-description">六年级转过来，特别认真，特别努力。</p>
+                        </div>
+                        <!-- / 教育经历 2 -->
+                        <!-- 教育经历 3 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">初中</h4>
+                          <span class="item-period">2011- 2014</span>
+                          <span class="item-small">无锡市广勤中学</span>
+                          <p class="item-description">自己都忘记初中在干嘛了，肯定很懂事。</p>
+                        </div>
+                        <!-- / 教育经历 3 -->
+                        <!-- 教育经历 4 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">高中</h4>
+                          <span class="item-period">2015 - 2018</span>
+                          <span class="item-small">无锡市第三高级中学</span>
+                          <p class="item-description">偶尔老实的高中生。</p>
+                        </div>
+                        <!-- / 教育经历 4 -->
+                        <!-- 教育经历 5 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">大学</h4>
+                          <span class="item-period">2018 - 现在</span>
+                          <span class="item-small">中南林业科技大学</span>
+                          <p class="item-description">⭐当代大学生⭐</p>
+                        </div>
+                        <!-- / 教育经历 5 -->
+                      </div>
+                      <!--教育经历时间线 End-->
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3><span>个人</span>经历</h3>
+                      </div>
+                       <!--个人经历时间线 Start-->
+                      <div class="timeline">
+                        <!-- 个人经历-职位 1 Start-->
+                        <div class="timeline-item">
+                          <h4 class="item-title">职位</h4>
+                          <span class="item-period">2016 - 2018</span>
+                          <span class="item-small">副班长</span>
+                          <p class="item-description">高一到高三担任副班长。</p>
+                        </div>
+                        <!-- 个人经历-职位 1 End-->
+                        <!-- 个人经历-奖项 1 Start-->
+                        <div class="timeline-item">
+                          <h4 class="item-title">国家级奖项</h4>
+                          <span class="item-period">2016</span>
+                          <span class="item-small">三等奖</span>
+                          <p class="item-description">第十四届全国中小学信息技术创新与实践活动“物联网创新设计”团体赛国家级三等奖</p>
+                        </div>
+                        <!--个人经历-奖项 1 End-->
+                        <!-- 个人经历-奖项 2 Start-->
+                        <div class="timeline-item">
+                          <h4 class="item-title">省级奖项</h4>
+                          <span class="item-period">2016</span>
+                          <span class="item-small">一等奖</span>
+                          <p class="item-description">第十四届全国中小学信息技术创新与实践活动“物联网创新设计”资格赛（江苏）团体赛省级一等奖</p>
+                        </div>
+                        <!--  个人经历-奖项 2 End -->
+                        <!-- 个人经历-奖项 3 Start-->
+                        <div class="timeline-item">
+                          <h4 class="item-title">省级奖项</h4>
+                          <span class="item-period">2017</span>
+                          <span class="item-small">二等奖</span>
+                          <p class="item-description">2017 NOC物联网创新设计竞赛省级二等奖</p>
+                        </div>
+                        <!-- 个人经历-奖项 3 End -->
+                        <!-- 个人经历-职位 2 Start-->
+                        <div class="timeline-item">
+                          <h4 class="item-title">职位</h4>
+                          <span class="item-period">2018 - 现在</span>
+                          <span class="item-small">班长</span>
+                          <p class="item-description">从大学担任班长至今。</p>
+                        </div>
+                        <!-- 个人经历-职位 2 End-->
+                      </div>
+                      <!--个人经历时间线 End-->
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3><span>设计</span>技能</h3>
+                      </div>
+                      <div class="skills-info">
+                        <h4>页面设计</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-1"></div>
+                        </div>
+                        <h4>视频制作</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-2"></div>
+                        </div>
+                        <h4>软件设计</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-3"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3><span>编程</span>语言</h3>
+                      </div>
+                      <div class="skills-info">
+                        <h4>HTML5</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-4"></div>
+                        </div>
+                        <h4>Java</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-5"></div>
+                        </div>
+                        <h4>C/C++</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-6"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!--了解更多 Start-->
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="block">
+                      <div class="center download-resume">
+                        <a href="#" class="btn btn-secondary">了解更多</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--了解更多 End-->
+              </div>
+            </div>
+          </section>
+          <!--简历 End-->
+
+          <section class="pt-page" data-id="services">
+            <!--服务 Start-->
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>服务</h2>
+              </div>
+              <div class="page-content">
+                <!-- My Services -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="block-title">
+                      <h3><span>服务</span>项目</h3>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="./images/service/web_design_icon.png" alt="页面设计" class="mCS_img_loaded">
+                        </div>
+                        <h4>页面设计</h4>
+                        <p> 🔹功能型网页设计<br>🔹形象型网页设计<br>🔹信息型网页设计</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="./images/service/photography_icon.png" alt="摄影" class="mCS_img_loaded">
+                        </div>
+                        <h4>摄影</h4>
+                        <p>📷构图干净<br>📷角度到位<br>📷用光巧妙</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="./images/service/creativity_icon.png" alt="Creativity" class="mCS_img_loaded">
+                        </div>
+                        <h4>项目开发</h4>
+                        <p><li class="fa fa-dot-circle-o"></li>/C++开发<br><li class="fa fa-dot-circle-o"></li>Android软件开发<br><li class="fa fa-dot-circle-o"></li>微信小程序开发</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="./images/service/advetising_icon.png" alt="Advetising" class="mCS_img_loaded">
+                        </div>
+                        <h4>广告</h4>
+                        <p>B站年更UP主<br>知乎老透明</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 服务 End -->
+                <!-- 工作意向 Start -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="block-title">
+                      <h3>工作<span>意向</span></h3>
+                    </div>
+                    <!--此处参考了office365购买界面-->
+                    <div class="lm-pricing row clearfix">
+                      <div class="lm-package-wrap col-md-4 default-col">
+                        <div class="lm-package">
+                          <div class="lm-heading-row">
+                            <span>视频制作</span>
+                          </div>
+                          <div class="lm-pricing-row">
+                            <span>¥50</span>
+                            <small>/每个</small>
+                          </div>
+                          <div class="lm-button-row">
+                            <a href="#" target="_self" class="btn btn-primary">点击联系</a>
+                          </div>
+                          <div class="lm-default-row">
+                            视频压制 剪辑后期
+                          </div>
+                          <div class="lm-default-row">
+                            字幕制作与翻译
+                          </div>
+                          <div class="lm-default-row">
+                            时间轴调整 特效字幕
+                          </div>
+                          <div class="lm-default-row">
                           </div>
                         </div>
-                        <div class="lm-package-wrap col-md-4 highlight-col ">
-                          <div class="lm-package">
-                            <div class="lm-heading-row">
-                              <span>项目开发</span>
-                            </div>
-                            <div class="lm-pricing-row">
-                              <span>价格详谈</span>
-                              <small>视项目大小复杂性而定</small>
-                            </div>
-                            <div class="lm-button-row">
-                              <a href="#" target="_self" class="btn btn-primary">点击联系</a>
-                            </div>
-                            <div class="lm-default-row">
-                              功能库开发
-                            </div>
-                            <div class="lm-default-row">
-                              C/C++桌面级应用开发
-                            </div>
-                            <div class="lm-default-row">
-                              Android简单应用开发
-                            </div>
-                            <div class="lm-default-row">
-                            </div>
+                      </div>
+                      <div class="lm-package-wrap col-md-4 highlight-col ">
+                        <div class="lm-package">
+                          <div class="lm-heading-row">
+                            <span>项目开发</span>
+                          </div>
+                          <div class="lm-pricing-row">
+                            <span>价格详谈</span>
+                            <small>视项目大小复杂性而定</small>
+                          </div>
+                          <div class="lm-button-row">
+                            <a href="#" target="_self" class="btn btn-primary">点击联系</a>
+                          </div>
+                          <div class="lm-default-row">
+                            功能库开发
+                          </div>
+                          <div class="lm-default-row">
+                            C/C++桌面级应用开发
+                          </div>
+                          <div class="lm-default-row">
+                            Android简单应用开发
+                          </div>
+                          <div class="lm-default-row">
                           </div>
                         </div>
-                        <div class="lm-package-wrap col-md-4 default-col ">
-                          <div class="lm-package">
-                            <div class="lm-heading-row">
-                              <span>页面设计</span>
-                            </div>
-                            <div class="lm-pricing-row">
-                              <span>¥ 3K - 4K</span>
-                              <small>/每月</small>
-                            </div>
-                            <div class="lm-button-row">
-                              <a href="#" target="_self" class="btn btn-primary">点击联系</a>
-                            </div>
-                            <div class="lm-default-row">
-                              视觉设计
-                            </div>
-                            <div class="lm-default-row">
-                              掌握网站设计的规范
-                            </div>
-                            <div class="lm-default-row">
-                              理解网站运行的原理
-                            </div>
+                      </div>
+                      <div class="lm-package-wrap col-md-4 default-col ">
+                        <div class="lm-package">
+                          <div class="lm-heading-row">
+                            <span>页面设计</span>
+                          </div>
+                          <div class="lm-pricing-row">
+                            <span>¥ 3K - 4K</span>
+                            <small>/每月</small>
+                          </div>
+                          <div class="lm-button-row">
+                            <a href="#" target="_self" class="btn btn-primary">点击联系</a>
+                          </div>
+                          <div class="lm-default-row">
+                            视觉设计
+                          </div>
+                          <div class="lm-default-row">
+                            掌握网站设计的规范
+                          </div>
+                          <div class="lm-default-row">
+                            理解网站运行的原理
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- End of Pricing -->
                 </div>
+                <!-- 工作意向 End -->
               </div>
-            </section><!--服务 End-->
-
-            <section class="pt-page" data-id="portfolio"><!--作品 Start-->
-              <div class="section-inner custom-page-content">
-                <div class="page-header color-1">
-                  <h2>作品</h2>
-                </div>
-                <div class="page-content">
-                  <!-- Portfolio Content -->
-                  <div class="portfolio-content">
-                    <!-- Portfolio filter -->
-                    <ul id="portfolio_filters" class="portfolio-filters">
-                      <li class="active">
-                        <a class="filter btn btn-sm btn-link active" data-group="all">所有</a>
-                      </li>
-                      <li>
-                        <a class="filter btn btn-sm btn-link" data-group="media">专栏</a>
-                      </li>
-                      <li>
-                        <a class="filter btn btn-sm btn-link" data-group="illustration">图片</a>
-                      </li>
-                      <li>
-                        <a class="filter btn btn-sm btn-link" data-group="video">视频</a>
-                      </li>
-                    </ul>
-                    <!-- End of Portfolio filter -->
-                    <!-- Portfolio Grid -->
-                    <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
-                      <figure class="item" data-groups='["all", "video"]'><!-- 作品 1 视频 1 Start-->
-                        <a href="https://player.vimeo.com/video/409674403?autoplay=1" title="西部世界超然混剪" class="lightbox mfp-iframe">
-                          <img src="./images/portfolio/WestWorld.jpg" alt="">
-                          <div>
-                            <h5 class="name">西部世界超然混剪</h5>
-                            <small>Vimeo视频</small>
-                            <i class="fa fa-video-camera"></i>
-                          </div>
-                        </a>
-                      </figure><!-- 作品 1 视频 1 End-->
-                      <figure class="item" data-groups='["all", "video"]'><!-- 作品 2 视频 2 Start-->
-                        <a href="https://player.vimeo.com/video/409683883?autoplay=1" title="奥日与黑暗森林 CG 1" class="lightbox mfp-iframe">
-                          <img src="./images/portfolio/Ori1.png" alt="">
-                          <div>
-                            <h5 class="name">奥日与黑暗森林 CG 1</h5>
-                            <small>Vimeo视频</small>
-                            <i class="fa fa-video-camera"></i>
-                          </div>
-                        </a>
-                      </figure><!-- 作品 2 视频 2 End-->
-                      <figure class="item" data-groups='["all", "video"]'><!-- 作品 3 视频 3 Start-->
-                        <a href="https://player.vimeo.com/video/409683960?autoplay=1" title="奥日与黑暗森林 CG 2" class="lightbox mfp-iframe">
-                          <img src="./images/portfolio/Ori2.png" alt="">
-                          <div>
-                            <h5 class="name">奥日与黑暗森林 CG 2</h5>
-                            <small>Vimeo视频</small>
-                            <i class="fa fa-video-camera"></i>
-                          </div>
-                        </a>
-                      </figure><!-- 作品 3 视频 3 End-->
-                    </div>
-                    <!-- /Portfolio Grid -->
-                  </div>
-                  <!-- /Portfolio Content -->
-                </div>
+            </div>
+          </section>
+          <!--服务 End-->
+          <section class="pt-page" data-id="portfolio">
+            <!--作品 Start-->
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>作品</h2>
               </div>
-            </section><!--作品 End-->
-          </div><!--子页面 End-->
-        </div><!--页面设置 End-->
-      </div><!--主体部分 End-->
-    </div><!--页面主体 End-->
+              <div class="page-content">
+                <!-- 作品内容 Start -->
+                <div class="portfolio-content">
+                  <!-- 作品条 Start-->
+                  <ul id="portfolio_filters" class="portfolio-filters">
+                    <li class="active">
+                      <a class="filter btn btn-sm btn-link active" data-group="all">所有</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="media">专栏</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="illustration">图片</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="video">视频</a>
+                    </li>
+                  </ul>
+                  <!-- 作品条 End -->
+                  <!-- 作品 Start -->
+                  <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <!-- 作品 1 视频 1 Start-->
+                      <a href="https://player.vimeo.com/video/409674403?autoplay=1" title="西部世界超然混剪"
+                        class="lightbox mfp-iframe">
+                        <img src="./images/portfolio/WestWorld.jpg" alt="">
+                        <div>
+                          <h5 class="name">西部世界超然混剪</h5>
+                          <small>Vimeo视频</small>
+                          <i class="fa fa-video-camera"></i>
+                        </div>
+                      </a>
+                    </figure><!-- 作品 1 视频 1 End-->
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <!-- 作品 2 视频 2 Start-->
+                      <a href="https://player.vimeo.com/video/409683883?autoplay=1" title="奥日与黑暗森林 CG 1"
+                        class="lightbox mfp-iframe">
+                        <img src="./images/portfolio/Ori1.png" alt="">
+                        <div>
+                          <h5 class="name">奥日与黑暗森林 CG 1</h5>
+                          <small>Vimeo视频</small>
+                          <i class="fa fa-video-camera"></i>
+                        </div>
+                      </a>
+                    </figure><!-- 作品 2 视频 2 End-->
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <!-- 作品 3 视频 3 Start-->
+                      <a href="https://player.vimeo.com/video/409683960?autoplay=1" title="奥日与黑暗森林 CG 2"
+                        class="lightbox mfp-iframe">
+                        <img src="./images/portfolio/Ori2.png" alt="">
+                        <div>
+                          <h5 class="name">奥日与黑暗森林 CG 2</h5>
+                          <small>Vimeo视频</small>
+                          <i class="fa fa-video-camera"></i>
+                        </div>
+                      </a>
+                    </figure><!-- 作品 3 视频 3 End-->
+                  </div><!-- 作品 End -->
+                </div>
+                <!-- 作品内容 End -->
+              </div>
+            </div>
+          </section>
+          <!--作品 End-->
+        </div>
+        <!--子页面 End-->
+      </div>
+      <!--页面设置 End-->
+    </div>
+    <!--主体部分 End-->
+  </div>
+  <!--页面主体 End-->
 
-    <footer><!--页面底部 Start-->
-      <div class="copyrights">Copyright © 2020 Akko All rights reserved.</div>
-    </footer><!--页面底部 End-->
+  <footer>
+    <!--页面底部 Start-->
+    <div class="copyrights">Copyright © 2020 Akko All rights reserved.</div>
+  </footer>
+  <!--页面底部 End-->
 
-    <!--Link Start-->
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script type="text/javascript" src="./lib/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./lib/js/pages-switcher.js"></script>
-    <script type="text/javascript" src="./lib/js/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="./lib/js/validator.js"></script>
-    <script type="text/javascript" src="./lib/js/jquery.shuffle.min.js"></script>
-    <script type="text/javascript" src="./lib/js/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="./lib/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="./lib/js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="./lib/js/jquery.hoverdir.js"></script>
-    <!--Link End-->
-  </body>
+  <!--Link Start-->
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./lib/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./lib/js/pages-switcher.js"></script>
+  <script type="text/javascript" src="./lib/js/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="./lib/js/validator.js"></script>
+  <script type="text/javascript" src="./lib/js/jquery.shuffle.min.js"></script>
+  <script type="text/javascript" src="./lib/js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="./lib/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="./lib/js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="./lib/js/jquery.hoverdir.js"></script>
+  <!--Link End-->
+
+  <!--测试新功能区 Start-->
+  <div id="light" class="white_content">这是一个层窗口示例程序.
+    <a href="javascript:void(0)"
+      onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a>
+  </div>
+  <div id="fade" class="black_overlay"></div>
+  <!--测试新功能区 End-->
+
+</body>
+
 </html>
