@@ -1,9 +1,9 @@
 <!--
  * -> Author : Akko
  * -> Date : 2020-04-20 16:34:36
- * -> LastEditTime : 2020-04-22 22:09:04
+ * -> LastEditTime : 2020-04-23 20:44:33
  * -> LastEditors : Akko
- * -> Description : My Web Resume 2.0 ( 1.0 写乱了，已废弃，源码仍然保留在github )
+ * -> Description : My Web Resume 2.0 ( 1.0 写乱了，已废弃，源码仍然保留在github（https://github.com/LvFinch/Web_Resume） )
  * -> FilePath : \My-Resume\index.html
  * -> Copyright  © 2020 Akko All rights reserved.
  -->
@@ -12,18 +12,38 @@
     * -> 作业要求 :
     * -> 大部分 css 代码使用外联的方式进行设置（√）
     * -> 代码需要注释，注意注释的格式 （√）
-    * -> 至少使用1种以上的背景色 （）
-    * -> 至少使用3个以上的链接页面 （）
-    * -> 至少使用1个 list （）
-    * -> 至少使用一个 table 展示相关信息 （）
+    * -> 至少使用1种以上的背景色 （√）
+          * -> 主要底色为白色
+          * -> 板块等背景色设为蓝色
+          * -> 点击微信遮罩边框等颜色
+    * -> 至少使用3个以上的链接页面 （√）
+          * -> 主页QQ临时聊天链接
+          * -> Github主页链接
+          * -> 下载键列链接
+          * -> 作品链接等
+    * -> 至少使用1个 list （√）
+          * -> 主页导航栏
+    * -> 至少使用一个 table 展示相关信息 （√）
+          * -> 主页个人信息展示
     * -> 至少使用1种 position:static 以外的定位方法 （√）
-            * -> 首次出现在加载动画中
-            * -> 位于 main.css 文件
-    * -> 至少使用1次 float 属性 （）
-    * -> 考虑浏览器的兼容性 （）
-    * -> *使用 filter 滤镜功能 （）
-    * -> *使用 Javascript （）
-    * -> *使用相关库（如 jQuery） （）
+          * -> 首次出现在加载动画中
+          * -> 位于 main.css 文件
+    * -> 至少使用1次 float 属性 （√）
+          * -> 首次出现用于设定站点头部导航栏
+          * -> 将导航信息通过float置于右侧
+    * -> 考虑浏览器的兼容性 （√）
+          * -> 考虑不同尺寸浏览器兼容性
+          * -> 考虑不同内核浏览器兼容性
+          * -> 考虑手机浏览器兼容性
+    * -> *使用 filter 滤镜功能 （√）
+          * -> 在首页点击微信图标弹出窗口
+          * -> 其背景透明度通过filter完成
+    * -> *使用 Javascript （√）
+    * -> *使用相关库（如 jQuery） （√）
+    * -> *其他
+    * -> *通过设定字体，以字体的形式展示图标
+          * -> *涉及到的图标有QQ，Wechat，Github，Video等
+          * -> *字体地址 ： http://fontawesome.io
 -->
 <html lang="zh" class="no-js">
 
@@ -133,14 +153,13 @@
                       </div>
                     </div>
                     <div class="social-links">
-                      <!--TODO: 悬停QQ，微信二维码，github转链接-->
-                      <a href="javascript:void(0)"onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                      <a href="tencent://message/?Menu=yes&uin=2322264747&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45">
                         <i class="fa fa-qq"></i>
                       </a>
                       <a href="javascript:void(0)"onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
                         <i class="fa fa-wechat"></i>
                       </a>
-                      <a href="javascript:void(0)"onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                      <a href="https://github.com/LvFinch" target="_blank">
                         <i class="fa fa-github"></i>
                       </a>
                     </div>
@@ -204,6 +223,7 @@
             </div>
           </section>
           <!--主页 End-->
+
           <section class="pt-page" data-id="resume">
             <!--简历 Start-->
             <div class="section-inner custom-page-content">
@@ -394,7 +414,7 @@
                     <div class="service-block">
                       <div class="service-info">
                         <div class="service-image">
-                          <img src="./images/service/web_design_icon.png" alt="页面设计" class="mCS_img_loaded">
+                          <img src="./img/service/web_design_icon.png" alt="页面设计" class="mCS_img_loaded">
                         </div>
                         <h4>页面设计</h4>
                         <p> 🔹功能型网页设计<br>🔹形象型网页设计<br>🔹信息型网页设计</p>
@@ -405,7 +425,7 @@
                     <div class="service-block">
                       <div class="service-info">
                         <div class="service-image">
-                          <img src="./images/service/photography_icon.png" alt="摄影" class="mCS_img_loaded">
+                          <img src="./img/service/photography_icon.png" alt="摄影" class="mCS_img_loaded">
                         </div>
                         <h4>摄影</h4>
                         <p>📷构图干净<br>📷角度到位<br>📷用光巧妙</p>
@@ -416,7 +436,7 @@
                     <div class="service-block">
                       <div class="service-info">
                         <div class="service-image">
-                          <img src="./images/service/creativity_icon.png" alt="Creativity" class="mCS_img_loaded">
+                          <img src="./img/service/creativity_icon.png" alt="Creativity" class="mCS_img_loaded">
                         </div>
                         <h4>项目开发</h4>
                         <p><li class="fa fa-dot-circle-o"></li>/C++开发<br><li class="fa fa-dot-circle-o"></li>Android软件开发<br><li class="fa fa-dot-circle-o"></li>微信小程序开发</p>
@@ -427,9 +447,9 @@
                     <div class="service-block">
                       <div class="service-info">
                         <div class="service-image">
-                          <img src="./images/service/advetising_icon.png" alt="Advetising" class="mCS_img_loaded">
+                          <img src="./img/service/advetising_icon.png" alt="Advetising" class="mCS_img_loaded">
                         </div>
-                        <h4>广告</h4>
+                        <h4>平台</h4>
                         <p>B站年更UP主<br>知乎老透明</p>
                       </div>
                     </div>
@@ -525,6 +545,7 @@
             </div>
           </section>
           <!--服务 End-->
+
           <section class="pt-page" data-id="portfolio">
             <!--作品 Start-->
             <div class="section-inner custom-page-content">
@@ -534,60 +555,56 @@
               <div class="page-content">
                 <!-- 作品内容 Start -->
                 <div class="portfolio-content">
-                  <!-- 作品条 Start-->
-                  <ul id="portfolio_filters" class="portfolio-filters">
-                    <li class="active">
-                      <a class="filter btn btn-sm btn-link active" data-group="all">所有</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="media">专栏</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="illustration">图片</a>
-                    </li>
-                    <li>
-                      <a class="filter btn btn-sm btn-link" data-group="video">视频</a>
-                    </li>
-                  </ul>
-                  <!-- 作品条 End -->
                   <!-- 作品 Start -->
                   <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
                     <figure class="item" data-groups='["all", "video"]'>
                       <!-- 作品 1 视频 1 Start-->
-                      <a href="https://player.vimeo.com/video/409674403?autoplay=1" title="西部世界超然混剪"
+                      <a href="https://www.bilibili.com/video/BV1Xs411L7yM/" target="_blank" title="西部世界超然混剪"
                         class="lightbox mfp-iframe">
-                        <img src="./images/portfolio/WestWorld.jpg" alt="">
+                        <img src="./img/portfolio/WestWorld.jpg" alt="西部世界超然混剪">
                         <div>
                           <h5 class="name">西部世界超然混剪</h5>
-                          <small>Vimeo视频</small>
+                          <small>B站视频</small>
                           <i class="fa fa-video-camera"></i>
                         </div>
                       </a>
                     </figure><!-- 作品 1 视频 1 End-->
                     <figure class="item" data-groups='["all", "video"]'>
                       <!-- 作品 2 视频 2 Start-->
-                      <a href="https://player.vimeo.com/video/409683883?autoplay=1" title="奥日与黑暗森林 CG 1"
+                      <a href="https://www.bilibili.com/video/BV1rs41137wV/" target="_blank" title="奥日与黑暗森林 CG 1"
                         class="lightbox mfp-iframe">
-                        <img src="./images/portfolio/Ori1.png" alt="">
+                        <img src="./img/portfolio/Ori1.png" alt="奥日与黑暗森林 CG 1">
                         <div>
                           <h5 class="name">奥日与黑暗森林 CG 1</h5>
-                          <small>Vimeo视频</small>
+                          <small>B站视频</small>
                           <i class="fa fa-video-camera"></i>
                         </div>
                       </a>
                     </figure><!-- 作品 2 视频 2 End-->
                     <figure class="item" data-groups='["all", "video"]'>
                       <!-- 作品 3 视频 3 Start-->
-                      <a href="https://player.vimeo.com/video/409683960?autoplay=1" title="奥日与黑暗森林 CG 2"
+                      <a href="https://www.bilibili.com/video/BV1rs41137cL/" target="_blank" title="奥日与黑暗森林 CG 2"
                         class="lightbox mfp-iframe">
-                        <img src="./images/portfolio/Ori2.png" alt="">
+                        <img src="./img/portfolio/Ori2.png" alt="奥日与黑暗森林 CG 2">
                         <div>
                           <h5 class="name">奥日与黑暗森林 CG 2</h5>
-                          <small>Vimeo视频</small>
+                          <small>B站视频</small>
                           <i class="fa fa-video-camera"></i>
                         </div>
                       </a>
                     </figure><!-- 作品 3 视频 3 End-->
+                    <figure class="item" data-groups='["all", "illustration"]'>
+                      <!-- 作品 4 项目1 Start-->
+                      <a href="https://github.com/LvFinch/Web_Exercises/tree/master/E2" target="_blank" title="Web项目"
+                        class="lightbox mfp-iframe">
+                        <img src="./img/portfolio/Web.png" alt="Web项目" height="100%" width="100%">
+                        <div>
+                          <h5 class="name">Web项目</h5>
+                          <small>Github项目</small>
+                          <i class="fa fa-github"></i>
+                        </div>
+                      </a>
+                    </figure><!-- 作品 4 项目1 End-->
                   </div><!-- 作品 End -->
                 </div>
                 <!-- 作品内容 End -->
@@ -624,9 +641,9 @@
   <!--Link End-->
 
   <!--测试新功能区 Start-->
-  <div id="light" class="white_content">这是一个层窗口示例程序.
-    <a href="javascript:void(0)"
-      onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a>
+  <div id="light" class="white_content">
+    <a  class="close" href="javascript:void(0)"
+      onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><li class="fa fa-close"></li></a>
   </div>
   <div id="fade" class="black_overlay"></div>
   <!--测试新功能区 End-->
