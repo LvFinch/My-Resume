@@ -13,8 +13,9 @@
   4. 作品
 08. 小滑块
 09. 作品全部信息页
-10. 移动设备适配
-11. 新增功能
+10.作品单独信息页
+11. 移动设备适配
+12. 新增功能
   1. 点击文字出现窗口
 
 ============================================================================= */
@@ -1397,6 +1398,225 @@ body>footer .copyrights {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
 }
 
+.blog-masonry {
+  margin: 0 -1em;
+}
+.blog-masonry.two-columns .item {
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
+
+.blog-masonry.three-columns .item {
+  width: 33.333333%;
+  float: left;
+  padding: 1em;
+}
+
+.blog-card {
+  display: block;
+  position: relative;
+  padding: 0;
+  background: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.blog-card:hover {
+  -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
+  -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
+  box-shadow: 0 1px 15px rgba(0,0,0,0.11);
+}
+
+.blog-card .post-image {
+  width: 100%;
+  margin: 0;
+}
+
+.blog-card .post-info {
+  padding: 0.8em 1.2em 1.4em;
+}
+
+.blog-card .blog-item-title {
+  margin: 5px 0 0 0;
+}
+
+.blog-card .post-meta {
+  padding: 1em;
+  margin: 0;
+}
+
+.blog-card .post-date {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 0.3em;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  right: 1em;
+  min-width: 44px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-card .post-date span {
+  display: block;
+  color: #29B6F6;
+  line-height: 1;
+  font-size: 12px;
+  margin: 0;
+}
+
+.blog-card .media-block {
+  position: relative;
+}
+
+.blog-card .media-block a .mask {
+  position: absolute;
+  background: #4f565e;
+  background: rgba(79,86,94,0.6);
+  display: inline-block;
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-card .media-block a .mask:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 40px;
+  text-align: center;
+  content: "\f0f6";
+  color: #fff;
+}
+
+.blog-card .media-block a:hover .mask {
+  visibility: visible;
+  opacity: 1;
+}
+
+.blog-card .post-date span.day {
+  font-size: 21px;
+  margin: 3px 0;
+}
+
+.blog-card .post-date span.month {
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.blog-card .post-date span.year {
+  font-size: 0.8em;
+}
+
+.blog-card ul.category {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-card ul.category li {
+  display: inline-block;
+}
+
+.blog-card ul.category li a {
+  color: #9e9e9e;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.blog-card .post-meta .item, .post-meta .item a {
+  color: #a6a6a6;
+}
+
+.post-meta .item {
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.post-meta .item:before {
+  padding-right: 5px;
+}
+
+/* =======================================
+7.6. Contact subpage
+======================================= */
+/* Contact info */
+.contact-info-block {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+}
+
+.contact-info-block:last-child {
+  margin-bottom: 30px;
+}
+
+.contact-info-block .ci-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  width: 36px;
+  height: 36px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ci-text {
+  position: relative;
+  padding-left: 50px;
+}
+
+.contact-info-block h5 {
+  margin: 5px 0;
+}
+
+.contact-info-block i {
+  position: relative;
+  font-size: 18px;
+  color: #29B6F6;
+  text-align: center;
+  line-height: 36px;
+}
+/* /Contact info */
+
+/* Contact form */
+.g-recaptcha {
+  margin-bottom: 20px;
+}
+/* / Contact form */
 /* =============================================================================
 08. 小滑块
 ============================================================================= */
@@ -1702,8 +1922,35 @@ body>footer .copyrights {
   border-radius: 3px;
 }
 
+/* ============================================================================= 
+10. 作品单独信息页
+============================================================================= */
+.single-page-content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto 50px;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+.single-page-content .content-area {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  max-width: 1032px;
+  margin: 0 auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+}
+
+.single-page-content .content-area .page-content {
+  padding: 50px;
+}
+
 /* =============================================================================
-10. 移动设备适配
+11. 移动设备适配
 ============================================================================= */
 
 @media only screen and (max-width: 1320px) {
@@ -2015,7 +2262,7 @@ body>footer .copyrights {
 }
 
 /* =============================================================================
-11. 新增功能
+12. 新增功能
 ============================================================================= */
 /* =======================================
 1. 点击文字出现窗口
@@ -2027,7 +2274,7 @@ body>footer .copyrights {
   left: 0%;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   z-index: 1001;
   -moz-opacity: 0.8;
   opacity: .80;
@@ -2038,7 +2285,7 @@ body>footer .copyrights {
   display: none;
   position: absolute;
   top: 35%;
-  left: 25%;
+  left: 37%;
   width: 500px;
   height: 500px;
   padding: 20px;
@@ -2047,4 +2294,17 @@ body>footer .copyrights {
   z-index: 1002;
   overflow: auto;
   background-image: url(/img/QRcode/wechat.png);
+}
+
+a.close a:link,
+a.close a:visiteid {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+a.close a:hover,
+a.close a:active {
+  color: #ff0000;
+  text-decoration: underline;
+  background: rgb(255, 0, 0);
 }
