@@ -1,7 +1,7 @@
 <!--
  * -> Author : Akko
  * -> Date : 2020-04-20 16:34:36
- * -> LastEditTime : 2020-04-28 19:47:20
+ * -> LastEditTime : 2020-04-28 21:20:27
  * -> LastEditors : Akko
  * -> Description : My Web Resume 2.0 ( 1.0 写乱了，已废弃，源码仍然保留在github（https://github.com/LvFinch/Web_Resume） )
  * -> FilePath : \My-Resume\index.html
@@ -41,7 +41,7 @@
     * -> *使用 Javascript （√）
     * -> *使用相关库（如 jQuery） （√）
     * -> *其他
-    * -> *通过设定字体，以字体的形式展示图标
+    * -> *通过设定字体，以字体的形式展示图标 (由于兼容性问题已删除)
           * -> *涉及到的图标有QQ，Wechat，Github，Video等
           * -> *字体地址 ： http://fontawesome.io
 -->
@@ -58,7 +58,7 @@
   <meta name="author" content="Akko" />
   <!--页面设定 End-->
   <!--连接 Start-->
-  <link rel="shortcut icon" href="./img/简介.ico">
+  <link rel="shortcut icon" href="./img/ico/简介.ico">
   <link rel="stylesheet" href="./css/main.css" type="text/css">
   <link rel="stylesheet" href="./lib/css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="./lib/css/normalize.css" type="text/css">
@@ -137,7 +137,7 @@
                 <div class="row">
                   <div class="col-sm-4 col-md-4 col-lg-4">
                     <div class="photo">
-                      <img src="./img/photo.jpg" alt="颜廷伟 AKko">
+                      <img src="./img/photo/photo.jpg" alt="颜廷伟 AKko">
                     </div>
                   </div>
                   <div class="col-sm-8 col-md-8 col-lg-8">
@@ -154,13 +154,13 @@
                     </div>
                     <div class="social-links">
                       <a href="tencent://message/?Menu=yes&uin=2322264747&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45">
-                        <i class="fa fa-qq"></i>
+                        <img src="./img/ico/qq.png" alt="主页QQ临时聊天链接" width="75%" height="75%" style="margin-top: 10%;">
                       </a>
                       <a href="javascript:void(0)"onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-                        <i class="fa fa-wechat"></i>
+                        <img src="./img/ico/wechat.png" alt="WeChat二维码" width="75%" height="75%" style="margin-top: 10%;">
                       </a>
                       <a href="https://github.com/LvFinch" target="_blank">
-                        <i class="fa fa-github"></i>
+                        <img src="./img/ico/github.png" alt="Github主页链接" width="75%" height="75%" style="margin-top: 10%;">
                       </a>
                     </div>
                   </div>
@@ -182,7 +182,7 @@
                       </p>
                     </div>
                     <div class="download-resume">
-                      <a href="https://github.com/LvFinch/My-Resume/releases" class="btn btn-secondary">下载简历</a>
+                      <a href="https://github.com/LvFinch/My-Resume/releases" class="btn btn-secondary" target="_blank">下载简历</a>
                     </div>
                   </div>
                   <!--关于我 +下载简历 End-->
@@ -457,7 +457,7 @@
                           <img src="./img/service/creativity_icon.png" alt="Creativity" class="mCS_img_loaded">
                         </div>
                         <h4>项目开发</h4>
-                        <p><li class="fa fa-dot-circle-o"></li>/C++开发<br><li class="fa fa-dot-circle-o"></li>Android软件开发<br><li class="fa fa-dot-circle-o"></li>微信小程序开发</p>
+                        <p>●C++开发<br>●Android软件开发<br>●微信小程序开发</p>
                       </div>
                     </div>
                   </div>
@@ -582,8 +582,7 @@
                         <img src="./img/portfolio/WestWorld.jpg" alt="西部世界超然混剪">
                         <div>
                           <h5 class="name">西部世界超然混剪</h5>
-                          <small>B站视频</small>
-                          <i class="fa fa-video-camera"></i>
+                          <img src="./img/ico/bilibili_disp.svg" alt="B站视频">
                         </div>
                       </a>
                     </figure><!-- 作品 1 视频 1 End-->
@@ -594,8 +593,7 @@
                         <img src="./img/portfolio/Ori1.png" alt="奥日与黑暗森林 CG 1">
                         <div>
                           <h5 class="name">奥日与黑暗森林 CG 1</h5>
-                          <small>B站视频</small>
-                          <i class="fa fa-video-camera"></i>
+                          <img src="./img/ico/bilibili_disp.svg" alt="B站视频">
                         </div>
                       </a>
                     </figure><!-- 作品 2 视频 2 End-->
@@ -606,8 +604,7 @@
                         <img src="./img/portfolio/Ori2.png" alt="奥日与黑暗森林 CG 2">
                         <div>
                           <h5 class="name">奥日与黑暗森林 CG 2</h5>
-                          <small>B站视频</small>
-                          <i class="fa fa-video-camera"></i>
+                          <img src="./img/ico/bilibili_disp.svg" alt="B站视频" width="10%" height="10%">
                         </div>
                       </a>
                     </figure><!-- 作品 3 视频 3 End-->
@@ -618,7 +615,7 @@
                         <img src="./img/portfolio/Web.png" alt="Web项目" height="100%" width="100%">
                         <div>
                           <h5 class="name">Web项目</h5>
-                          <small>Github项目</small>
+                          <img src="./img/ico/github_disp.svg" alt="Github项目">
                           <i class="fa fa-github"></i>
                         </div>
                       </a>
@@ -659,9 +656,9 @@
   <!--Link End-->
 
   <!--测试新功能区 Start-->
-  <div id="light" class="white_content">
+  <div id="light" class="white_content" style="background-image: url(./img/QRcode/wechat.png)">
     <a  class="close" href="javascript:void(0)"
-      onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><li class="fa fa-close"></li></a>
+      onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">×</a>
   </div>
   <div id="fade" class="black_overlay"></div>
   <!--测试新功能区 End-->
