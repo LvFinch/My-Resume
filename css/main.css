@@ -1,6 +1,6 @@
 /* =============================================================================
 
-01. 字体
+01. 字体 ( 已废弃 )
 02. 页面设定
 03. 页面加载动画
 04. 子页面切换
@@ -21,14 +21,13 @@
 ============================================================================= */
 
 /* =============================================================================
-01. 字体
+01. 字体 ( 已废弃 )
 ============================================================================= */
 /* 图标字体 */
-@import url('/lib/css/font-awesome.css');
-@import url('/lib/css/material-design-iconic-font.min.css');
+/*@import url('/lib/css/font-awesome.css');*/
+/*@import url('/lib/css/material-design-iconic-font.min.css');*/
 /* 全部图标地址 : http://fontawesome.io/icons/ */
 /* 全部图标地址2: http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.htmls */
-
 /* =============================================================================
 02. 页面设定
 ============================================================================= */
@@ -2293,7 +2292,6 @@ body>footer .copyrights {
   background-color: white;
   z-index: 1002;
   overflow: auto;
-  background-image: url(/img/QRcode/wechat.png);
 }
 
 a.close a:link,
