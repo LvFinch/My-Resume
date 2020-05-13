@@ -8,6 +8,8 @@
  * -> Copyright  © 2020 Akko All rights reserved.
  -->
 # Web_Resume
+## 访问主页
+https://lvfinch.github.io/My-Resume/
 ## 作业要求
     * -> 大部分 css 代码使用外联的方式进行设置（√）
     * -> 代码需要注释，注意注释的格式 （√）
